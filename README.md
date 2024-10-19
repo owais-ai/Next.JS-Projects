@@ -1,2 +1,2 @@
-# Next.JS-Tasks
+# Next.JS-Tasks and assignments
  
