@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="bg-gray-100">
         <div className="ml-48 my-16 pt-10 text-gray-600">
-          <div className="font-bold">Featured New Cars</div>
+          <div className="font-bold text-xl">Featured New Cars</div>
           <div>
             <ul className="flex gap-10 mt-6">
               <li className="font-bold border-b-2 border-blue-400 pb-2">
@@ -84,18 +84,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-between mx-52 pb-16">
-          <div className="bg-white"bg-white>
-            <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />Toyotta Corolla
+        <div className="flex justify-between mx-52 pb-16 text-blue-800 font-bold">
+          <div className="bg-white justify-center text-center">
+            <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />Toyota Corolla <div className="text-green-600 text-xs font-normal">PKR 59.7-75.5 lac</div>
           </div>
-          <div className="bg-white"bg-white>
-            <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki Alto
+          <div className="bg-white justify-center text-center">
+            <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki Alto<div className="text-green-600 text-xs font-normal">PKR 23-30.5 lac</div>
           </div>
-          <div className="bg-white"bg-white>
-            <Image src="/Swift.jpg" alt="Car" width={220} height={50} /> Suzuki Swift
+          <div className="bg-white justify-center text-center">
+            <Image src="/Swift.jpg" alt="Car" width={220} height={50} /> Suzuki Swift<div className="text-green-600 text-xs font-normal">PKR 39.7-45.5 lac</div>
           </div>
-          <div className="bg-white"bg-white>
-            <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda Civic
+          <div className="bg-white justify-center text-center">
+            <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda Civic<div className="text-green-600 text-xs font-normal mb-4">PKR 65.5-70.5 lac</div>
           </div>
         </div>
       </div>
