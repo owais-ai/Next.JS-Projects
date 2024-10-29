@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Navbar from "./components/Navbar";
+
 import Footer from "./components/Footer";
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
           </p>
           <div className="bg-gray-300 border-b-2 w-60"></div>
         </div>
+
         <div className="flex justify-center gap-32 mt-10">
           <div>
             <p className="font-bold text-xl text-blue-900 mb-4">
@@ -66,6 +69,37 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="bg-gray-100">
+        <div className="ml-48 my-16 pt-10 text-gray-600">
+          <div className="font-bold">Featured New Cars</div>
+          <div>
+            <ul className="flex gap-10 mt-6">
+              <li className="font-bold border-b-2 border-blue-400 pb-2">
+                Popular
+              </li>
+              <li>Upcoming</li>
+              <li>Newly Launched</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex justify-between mx-52 pb-16">
+          <div className="bg-white"bg-white>
+            <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />Toyotta Corolla
+          </div>
+          <div className="bg-white"bg-white>
+            <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki Alto
+          </div>
+          <div className="bg-white"bg-white>
+            <Image src="/Swift.jpg" alt="Car" width={220} height={50} /> Suzuki Swift
+          </div>
+          <div className="bg-white"bg-white>
+            <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda Civic
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
