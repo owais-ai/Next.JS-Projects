@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 export default function Checkout() {
   return (
-    <div className="bg-slate-100 min-h-screen"><Navbar/>
+    <div className="bg-slate-100 min-h-screen">
+      <Navbar />
       <h1 className="text-4xl font-semibold text-center uppercase py-6">
         enter your details
       </h1>
@@ -27,8 +29,13 @@ export default function Checkout() {
           className="border border-blue-300 p-2 w-1/3 rounded"
         />
       </form>
-      <div className="flex justify-center items-center mt-10">
-      <button className="bg-blue-800 rounded p-2 text-white">Place Your Order</button>
-    </div></div>
+      <div className="flex justify-center items-center py-10">
+        <Link href="/confirmation">
+          <button className="bg-blue-800 rounded p-2 text-white">
+            Place Your Order
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 }
