@@ -1,6 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
-
 import Footer from "./components/Footer";
 export default function Home() {
   return (
@@ -75,9 +75,7 @@ export default function Home() {
           <div className="font-bold text-xl">Featured New Cars</div>
           <div>
             <ul className="flex gap-10 mt-6">
-              <li className="font-bold border-b-2 border-blue-400 pb-2">
-                Popular
-              </li>
+              <li className="font-bold border-b-2 border-blue-400">Popular</li>
               <li>Upcoming</li>
               <li>Newly Launched</li>
             </ul>
@@ -85,18 +83,42 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between mx-52 pb-16 text-blue-800 font-bold">
-          <div className="bg-white justify-center text-center">
-            <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />Toyota Corolla <div className="text-green-600 text-xs font-normal">PKR 59.7-75.5 lac</div>
-          </div>
-          <div className="bg-white justify-center text-center">
-            <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki Alto<div className="text-green-600 text-xs font-normal">PKR 23-30.5 lac</div>
-          </div>
-          <div className="bg-white justify-center text-center">
-            <Image src="/Swift.jpg" alt="Car" width={220} height={50} /> Suzuki Swift<div className="text-green-600 text-xs font-normal">PKR 39.7-45.5 lac</div>
-          </div>
-          <div className="bg-white justify-center text-center">
-            <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda Civic<div className="text-green-600 text-xs font-normal mb-4">PKR 65.5-70.5 lac</div>
-          </div>
+          <Link href="/corolla">
+            <div className="bg-white justify-center text-center h-60">
+              <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />
+              Toyota Corolla{" "}
+              <div className="text-green-600 text-xs font-normal">
+                PKR 59.7-65.5 lac
+              </div>
+            </div>
+          </Link>
+          <Link href="/alto">
+            <div className="bg-white justify-center text-center h-60">
+              <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki
+              Alto
+              <div className="text-green-600 text-xs font-normal">
+                PKR 23-30.5 lac
+              </div>
+            </div>
+          </Link>
+          <Link href="/swift">
+            <div className="bg-white justify-center text-center h-60">
+              <Image src="/Swift.jpg" alt="Car" width={220} height={50} />{" "}
+              Suzuki Swift
+              <div className="text-green-600 text-xs font-normal">
+                PKR 39.7-45.5 lac
+              </div>
+            </div>
+          </Link>
+          <Link href="/civic">
+            <div className="bg-white justify-center text-center h-60">
+              <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda
+              Civic
+              <div className="text-green-600 text-xs font-normal mb-4">
+                PKR 65.5-70.5 lac
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
 
