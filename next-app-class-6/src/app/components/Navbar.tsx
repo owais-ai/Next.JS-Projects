@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav>
@@ -14,9 +15,9 @@ export default function Navbar() {
       </div>
 
       <div className="h-28 bg-blue-950 text-white flex justify-center items-center gap-32">
-        <Image src="/logo.png" alt="logo" width={200} height={50} />
+        <Link href="/"><Image src="/logo.png" alt="logo" width={200} height={50} /></Link>
         <ul className="flex gap-6">
-          <li>New Cars</li>
+          <li>New Cars</li> 
           <li>Used Cars</li>
           <li>Bikes</li>
           <li>Auto Store</li>

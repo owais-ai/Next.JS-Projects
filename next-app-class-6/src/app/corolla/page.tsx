@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
 
 export default function Corolla() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100"><Navbar/>
       <div className="flex justify-center items-center font-bold underline text-2xl py-5">
         Toyota Corolla 2024 Price in Pakistan, Images, Reviews & Specs
       </div>

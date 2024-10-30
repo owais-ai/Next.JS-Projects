@@ -1,6 +1,7 @@
+import Navbar from "../components/Navbar";
 export default function Checkout() {
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-slate-100 min-h-screen"><Navbar/>
       <h1 className="text-4xl font-semibold text-center uppercase py-6">
         enter your details
       </h1>

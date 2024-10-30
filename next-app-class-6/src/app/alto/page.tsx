@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function Alto() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100"><Navbar/>
       <div className="flex justify-center items-center font-bold underline text-2xl py-5">
         Suzuki Alto 2024 Price in Pakistan, Images, Reviews & Specs
       </div>
