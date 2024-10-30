@@ -5,10 +5,10 @@ export default function Navbar() {
     <nav>
       <div className="bg-blue-950 pb-2 text-white flex justify-between text-center pt-3">
         <div className="ml-36 flex">
-          <Image src="/phone.png" alt="phone-icon" width={22} height={1} />
-          Download App via SMS
+          <Image src="/phone.png" alt="phone-icon" width={20} height={1} />
+          <p className="text-xs py-1">Download App via SMS</p>
         </div>
-        <div className="mr-36">Sign In | Sign Up</div>
+        <div><p className="mr-36 text-xs py-1">Sign In | Sign Up</p></div>
       </div>
       <div className="bg-blue-950">
         <div className="h-px bg-gray-500 justify-center mx-36"></div>
