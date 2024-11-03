@@ -34,7 +34,7 @@ export default function Home() {
                 the Best Price
               </li>
             </ul>
-            <button className="flex items-center  justify-center  bg-red-600 text-white w-32 h-10 mt-3 rounded">
+            <button className="flex items-center  justify-center  bg-red-600 hover:bg-red-700 text-white w-32 h-10 mt-3 rounded">
               Post Your Ad
             </button>
           </div>
@@ -63,7 +63,7 @@ export default function Home() {
                 Secure Transaction
               </li>
             </ul>
-            <button className=" flex bg-blue-600 text-white text-center justify-center items-center w-36 h-10 mt-3 rounded">
+            <button className=" flex bg-blue-600 hover:bg-blue-700 text-white text-center justify-center items-center w-36 h-10 mt-3 rounded">
               Register Your Car
             </button>
           </div>
