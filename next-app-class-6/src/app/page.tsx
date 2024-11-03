@@ -84,7 +84,7 @@ export default function Home() {
 
         <div className="flex justify-between mx-52 pb-16 text-blue-800 font-bold">
           <Link href="/corolla">
-            <div className="bg-white justify-center text-center h-60">
+            <div className="bg-white justify-center text-center h-60 hover:scale-105">
               <Image src="/Corolla.jpg" alt="Car" width={220} height={50} />
               Toyota Corolla{" "}
               <div className="text-green-600 text-xs font-normal">
@@ -93,7 +93,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/alto">
-            <div className="bg-white justify-center text-center h-60">
+            <div className="bg-white justify-center text-center h-60 hover:scale-105">
               <Image src="/Alto.png" alt="Car" width={220} height={50} /> Suzuki
               Alto
               <div className="text-green-600 text-xs font-normal">
@@ -102,7 +102,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/swift">
-            <div className="bg-white justify-center text-center h-60">
+            <div className="bg-white justify-center text-center h-60 hover:scale-105">
               <Image src="/Swift.jpg" alt="Car" width={220} height={50} />{" "}
               Suzuki Swift
               <div className="text-green-600 text-xs font-normal">
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/civic">
-            <div className="bg-white justify-center text-center h-60">
+            <div className="bg-white justify-center text-center h-60 hover:scale-105">
               <Image src="/Civic.jpg" alt="Car" width={220} height={50} /> Honda
               Civic
               <div className="text-green-600 text-xs font-normal mb-4">
