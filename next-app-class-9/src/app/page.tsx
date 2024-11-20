@@ -67,7 +67,7 @@ export default function Home() {
           Solopreneur Developing Billion-Dollar Valued Developers and
           Solopreneurs
         </h1>
-        <p className="px-7 pb-8 text-[20px] text-[rgb(39,39,42)] text-justify tracking-wide">
+        <p className="px-7 pb-8 text-[20px] text-zinc-800 sm-tracking-wider tracking-normal text-cente text-justify">
           The pace of technological change is accelerating, big players like
           Microsoft, Amazon, Google, and OpenAI are winning by providing
           infrastructure, large AI foundation models, frameworks, 3D Metaverse
@@ -82,7 +82,7 @@ export default function Home() {
           other team members.
         </p>
       </div>
-      <div className="flex md:justify-around justify-center items-center md:items-stretch   gap-5 md:gap-0 md:flex-row flex-col">
+      <div className="flex md:justify-around justify-center items-center md:items-stretch p-2 gap-5 md:gap-0 md:flex-row flex-col">
         <Image
           className="rounded-xl"
           src="/imageWebsite.jpg"
