@@ -67,7 +67,7 @@ export default function Home() {
           Solopreneur Developing Billion-Dollar Valued Developers and
           Solopreneurs
         </h1>
-        <p className="px-7 pb-8 text-[20px] text-zinc-800 sm-tracking-wider tracking-normal text-cente text-justify">
+        <p className="px-7 pb-8 text-[20px] text-zinc-800 tracking-normal md:tracking-wide text-cente text-justify">
           The pace of technological change is accelerating, big players like
           Microsoft, Amazon, Google, and OpenAI are winning by providing
           infrastructure, large AI foundation models, frameworks, 3D Metaverse
