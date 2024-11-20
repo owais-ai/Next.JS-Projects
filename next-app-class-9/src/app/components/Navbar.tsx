@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Navbar() {
   return (
-    <div className="bg-[rgb(4,78,131)] mt-0 h-[74px]">
+    <div className="bg-[rgb(4,78,131)] mt-0 h-[74px] md:sticky md:top-0">
       <div className="flex flex-col md:flex-row gap-20 mx-6 text-center items-center justify-center">
         <Image className="md:mt-5 z-10 justify-center" src="/logo.png" alt="logo" width="84" height="50"/>
         <span className="text-blue-200 mt-5 text-center text-2xl font-bold hidden md:mb-20 md:block">Tuition Free Education Program on Latest Technologies</span>

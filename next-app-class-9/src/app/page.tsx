@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div>
       <Navbar />
       <div className="flex md:justify-between md:flex-row flex-col bg-gray-100 bg-cover bg-no-repeat bg-center min-h-screen w-full">
         <div className="md:mt-28 mt-16 md:ml-8 text-center">
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 overflow-hidden">
           <Image
             src="/cover.png"
             alt="cover"
