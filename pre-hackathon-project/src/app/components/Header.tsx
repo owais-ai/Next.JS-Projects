@@ -25,20 +25,20 @@ export default function Header() {
       </div>
       <div className="flex justify-around mt-12 items-center">
         <div>
-          <h2 className="text-xl font-bold">Exclusive</h2>
+          <div className="-mt-8"><Link href={"/"}><Image src={"/logo.png"} alt="logo" width={68} height={48}/></Link></div>
         </div>
         <div>
           <ul className="flex gap-10">
-            <li className="border-b-2 hover:border-b-2">
+            <li className="border-b-2 hover:border-b-2 hover:border-slate-300">
               <Link href={"#"}>Home</Link>
             </li>
-            <li className="hover:border-b-2">
+            <li className="hover:border-b-2 hover:border-slate-300">
               <Link href={"#"}>Contact</Link>
             </li>
-            <li className="hover:border-b-2">
+            <li className="hover:border-b-2 hover:border-slate-300">
               <Link href={"#"}>About</Link>
             </li>
-            <li className="hover:border-b-2">
+            <li className="hover:border-b-2 hover:border-slate-300">
               <Link href={"#"}>Signup</Link>
             </li>
           </ul>

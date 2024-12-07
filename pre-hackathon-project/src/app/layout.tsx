@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Store PK",
+  title: "Owais Store PK",
   description: "Created By M.Owais",
 };
 

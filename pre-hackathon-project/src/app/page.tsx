@@ -3,10 +3,10 @@ import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div className="Main">
-      <div className="border-t-[1px] border-t-slate-200 my-4 w-full"></div>
+    <div className="Main mx-28">
+      <div className="border-t-[1px] border-t-slate-200 my-4 w-full"/>
 
-      <div className="Hero mt-10 flex justify-around">
+      <div className="Hero mt-10 flex justify-between">
 
         <div className="Hero1">
           <ul className="flex flex-col justify-between h-[344px]">
@@ -41,6 +41,25 @@ export default function Home() {
           <div className="dots"><Image src={"/dotFrame.svg"} alt="iphoneImg" width={100} height={24} /></div>
         </div>
       </div>
+
+            <div className="mt-20 w-5 h-10 rounded-md bg-[#DB4444] flex items-center"><span className="ml-8 text-[#DB4444]">Today's</span></div>            
+
+      <div className="Today's mb-20 mt-6 flex justify-between gap-20 items-baseline">
+        <div className="">
+          <div className="1-1">
+          <div className="text-3xl font-semibold">Flash Sales</div>
+          </div>
+        </div>
+
+        <div className="1-2">
+          <Image src={"/flashSale.svg"} alt="" width={280} height={100}/>
+        </div>
+
+        <div className="1-3">
+        <Image src={"/arrows.svg"} alt="" width={100} height={100} className="ml-80" />
+        </div>
+      </div>
+
 
     </div>
   );
