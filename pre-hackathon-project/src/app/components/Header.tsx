@@ -70,8 +70,8 @@ export default function Header() {
               height={16}
             /> <Image
               src={"/cart.svg"}
-              alt="wishlist"
-              width={18}
+              alt="cart"
+              width={20}
               height={16}
             />
           </div>
