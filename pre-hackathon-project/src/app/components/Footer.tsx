@@ -80,7 +80,7 @@ function Footer() {
                
             </div>
             </div>
-            <div className="border-t-[1px] flex items-center justify-center gap-1 text-white border-t-slate-200 py-2 w-full text-center">
+            <div className="border-t-[1px] flex items-center justify-center gap-1 text-slate-300 border-t-slate-200 py-2 w-full text-center">
                 <span className="text-[24px]">&copy;</span> Copyright Owais 2024. All right reserved
             </div>
 
