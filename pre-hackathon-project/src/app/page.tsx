@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="Main mx-28">
-      <div className="border-t-[1px] border-t-slate-200 my-4 w-full" />
+      
 
       <div className="Hero mt-10 flex justify-between">
 

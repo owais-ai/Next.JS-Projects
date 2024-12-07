@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div>
+
       <div className="flex justify-end pr-20 text-white items-center bg-black py-4">
         <div className="w-[859px] h-[24px] flex gap-6">
           <p>
@@ -25,21 +26,21 @@ export default function Header() {
       </div>
       <div className="flex justify-around mt-12 items-center">
         <div>
-          <div className="-mt-8"><Link href={"/"}><Image src={"/logo.png"} alt="logo" width={68} height={48}/></Link></div>
+          <div className="-mt-8"><Link href={"/"}><Image src={"/logo.png"} alt="logo" width={68} height={48} /></Link></div>
         </div>
         <div>
           <ul className="flex gap-10">
             <li className="border-b-2 hover:border-b-2 hover:border-slate-300">
-              <Link href={"#"}>Home</Link>
+              <Link href={"/"}>Home</Link>
             </li>
             <li className="hover:border-b-2 hover:border-slate-300">
-              <Link href={"#"}>Contact</Link>
+              <Link href={"/contact"}>Contact</Link>
             </li>
             <li className="hover:border-b-2 hover:border-slate-300">
-              <Link href={"#"}>About</Link>
+              <Link href={"/about"}>About</Link>
             </li>
             <li className="hover:border-b-2 hover:border-slate-300">
-              <Link href={"#"}>Signup</Link>
+              <Link href={"/signup"}>Signup</Link>
             </li>
           </ul>
         </div>
@@ -63,7 +64,7 @@ export default function Header() {
             </div>
           </div>
           <div className="flex gap-5">
-          <button><Image
+            <button><Image
               src={"/wishlist.svg"}
               alt="wishlist"
               width={16}
@@ -77,6 +78,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <div className="border-t-[1px] border-t-slate-200 my-4 mx-28" />
     </div>
   );
 }
