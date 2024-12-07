@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,15 +11,15 @@ export default function Home() {
 
         <div className="Hero1">
           <ul className="flex flex-col justify-between h-[344px]">
-            <li>Woman's Fashion</li>
-            <li>Man's Fashion</li>
-            <li>Electronics</li>
-            <li>Home & Electronics</li>
-            <li>Medicine</li>
-            <li>Sports & Outdoor</li>
-            <li>Baby & Toys</li>
-            <li>Grocery & Pets</li>
-            <li>Heath & Beauty</li>
+            <Link href="#"><li className="hover:underline">Woman's Fashion</li></Link>
+            <Link href="#"><li className="hover:underline">Man's Fashion</li></Link>
+            <Link href="#"><li className="hover:underline">Electronics</li></Link>
+            <Link href="#"><li className="hover:underline">Home & Electronics</li></Link>
+            <Link href="#"><li className="hover:underline">Medicine</li></Link>
+            <Link href="#"><li className="hover:underline">Sports & Outdoor</li></Link>
+            <Link href="#"><li className="hover:underline">Baby & Toys</li></Link>
+            <Link href="#"><li className="hover:underline">Grocery & Pets</li></Link>
+            <Link href="#"><li className="hover:underline">Heath & Beauty</li></Link>
           </ul>
         </div>
 
@@ -29,8 +30,8 @@ export default function Home() {
               <div className="text-white text-5xl">Up to 10% <br /> off Voucher</div>
 
               <div className="flex gap-2">
-                <div className="text-white text-[18px] font-semibold">Shop Now</div>
-                <div><Image src={"/icons arrow-right.svg"} alt="iphoneImg" width={24} height={24} /></div>
+                <div className="text-white text-[18px] font-semibold"><button>Shop Now</button></div>
+                <div><button><Image src={"/icons arrow-right.svg"} alt="iphoneImg" width={24} height={24} /></button></div>
               </div>
 
             </div>
@@ -65,10 +66,10 @@ export default function Home() {
       <div className="flashProducts flex justify-around">
 
         <div className="Product1 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
-          <div className="Product1 w-[270px] h-[250px] bg-[#F5F5F5] rounded">
+          <Link href={"#"}><div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
             <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
-            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/g92-2-500x500 1.svg"} alt="" width={180} height={180} /></div>
-          </div>
+            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/g92-2-500x500 1.svg"} alt="" width={150} height={180} /></div>
+          </div></Link>
           <div>
             <p className="font-semibold">HAVIT HV-G92 Gamepad</p>
             <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
@@ -77,36 +78,36 @@ export default function Home() {
         </div>
 
         <div className="Product2 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
-          <div className="Product1 w-[270px] h-[250px] bg-[#F5F5F5] rounded">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
             <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-35%</div>
             <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/keyboard.png"} alt="" width={190} height={180} /></div>
           </div>
           <div>
-            <p className="font-semibold">HAVIT HV-G92 Gamepad</p>
+            <p className="font-semibold">AK-900 Wired Keyboard</p>
             <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
               <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
           </div>
         </div>
 
         <div className="Product3 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
-          <div className="Product1 w-[270px] h-[250px] bg-[#F5F5F5] rounded">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
             <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-30%</div>
             <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/lcd.png"} alt="" width={190} height={180} /></div>
           </div>
           <div>
-            <p className="font-semibold">HAVIT HV-G92 Gamepad</p>
+            <p className="font-semibold">IPS LCD Gaming Monitor</p>
             <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
               <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
           </div>
         </div>
 
         <div className="Product4 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
-          <div className="Product1 w-[270px] h-[250px] bg-[#F5F5F5] rounded">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
             <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
             <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/chair.png"} alt="" width={190} height={180} /></div>
           </div>
           <div>
-            <p className="font-semibold">HAVIT HV-G92 Gamepad</p>
+            <p className="font-semibold">S-Series Comfort Chair </p>
             <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
               <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
           </div>
@@ -200,6 +201,60 @@ export default function Home() {
           </div>
           <div className=""><button className="border-[1px] py-4 px-12 rounded text-white bg-[#DB4444]">View All</button></div>
         </div>
+      </div>
+
+      <div className="BestProducts flex justify-around">
+
+        <div className="Product1 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
+            <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
+            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/shirt.png"} alt="" width={180} height={180} /></div>
+          </div>
+          <div>
+            <p className="font-semibold">The north coat</p>
+            <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
+              <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
+          </div>
+        </div>
+
+        <div className="Product2 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
+            <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
+            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/purse.png"} alt="" width={180} height={180} /></div>
+          </div>
+          <div>
+            <p className="font-semibold">Gucci duffle bag</p>
+            <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
+              <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
+          </div>
+        </div>
+
+        <div className="Product3 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
+            <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
+            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/speaker.png"} alt="" width={200} height={180} /></div>
+          </div>
+          <div>
+            <p className="font-semibold">RGB liquid CPU Cooler</p>
+            <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
+              <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
+          </div>
+        </div>
+
+        <div className="Product4 w-[270px] h-[350px] flex flex-col gap-3 items-center text-center">
+          <div className="Product1 w-[270px] h-[250px] hover:scale-105 bg-[#F5F5F5] rounded">
+            <div className="h-[26px] w-[55px] bg-[#DB4444] relative top-3 left-3 text-white flex items-center justify-center">-40%</div>
+            <div className="w-[270px] h-[200px] flex justify-center items-center"><Image src={"/table.png"} alt="" 
+            width={250} height={180} /></div>
+          </div>
+          <div>
+            <p className="font-semibold">Small BookSelf</p>
+            <p className="flex gap-5 justify-center"><span className="text-[#DB4444] text-[18px] font-semibold">$120</span>
+              <span className="text-gray-500 font-semibold"><s>$160</s></span></p>
+          </div>
+        </div>
+
+
       </div>
 
     </div>
