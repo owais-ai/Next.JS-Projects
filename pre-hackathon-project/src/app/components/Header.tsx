@@ -47,33 +47,33 @@ export default function Header() {
           <div className="bg-slate-100 rounded flex justify-around gap items-center w-[243px] h-[38px]">
             <div className="">
               <input
-                type="search"
+                type="text"
                 placeholder="What are you looking for?"
-                className="bg-slate-100 font-thin text-[12px] border-none p-1 w-[180px]"
+                className="bg-slate-100 font-thin text-[12px] p-1 w-[180px] outline-none"
               />
             </div>
             <div className="w-4 h-4">
-              <Image
+              <button><Image
                 className="bg-slate-100"
                 src={"/search.svg"}
                 alt="search icon"
                 width={16}
                 height={16}
-              />
+              /></button>
             </div>
           </div>
-          <div className="flex gap-5 w-6 h-6">
-          <Image
+          <div className="flex gap-5">
+          <button><Image
               src={"/wishlist.svg"}
               alt="wishlist"
               width={16}
               height={16}
-            /> <Image
+            /></button> <button><Image
               src={"/cart.svg"}
               alt="cart"
               width={20}
               height={16}
-            />
+            /></button>
           </div>
         </div>
       </div>
