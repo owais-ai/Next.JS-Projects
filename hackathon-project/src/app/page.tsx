@@ -68,9 +68,9 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col pt-2 rounded text-center">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
-              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
+              <h3 className="text-2xl text-[#3A3A3A]">Respira</h3>
+              <p className="text-[#898989]">Outdoor bar table and stool</p>
+              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 500.000</s></span></h4>
             </div>
           </div>
 
@@ -80,8 +80,8 @@ export default function Home() {
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
+              <h3 className="text-2xl text-[#3A3A3A]">Lolito</h3>
+              <p className="text-[#898989]">Luxury big sofa</p>
               <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
             </div>
           </div>
@@ -92,8 +92,8 @@ export default function Home() {
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
+              <h3 className="text-2xl text-[#3A3A3A]">Muggo</h3>
+              <p className="text-[#898989]">Small Mug</p>
               <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
             </div>
           </div>
@@ -104,9 +104,9 @@ export default function Home() {
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
-              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
+              <h3 className="text-2xl text-[#3A3A3A]">Muggo</h3>
+              <p className="text-[#898989]">Small Mug</p>
+              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 150.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
             </div>
           </div>
 
@@ -116,19 +116,19 @@ export default function Home() {
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
-              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
+              <h3 className="text-2xl text-[#3A3A3A]">Pingky</h3>
+              <p className="text-[#898989]">Cute bed set</p>
+              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 7.000.000</span> <span className="text-[#B0B0B0]"><s>Rp 14.000.000</s></span></h4>
             </div>
           </div>
 
           <div className="product7 flex flex-col items-center basis-1/4">
             <div className="h-[350px] w-56 relative">
-              <Image src={'/43eebd52ea72d60650f31030ec4bf7e6.png'} alt=""
+              <Image src={'/bdb0310fb379a6b1828809d2c0652533.png'} alt=""
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
+              <h3 className="text-2xl text-[#3A3A3A]">Leviosa</h3>
               <p className="text-[#898989]">Stylish cafe chair</p>
               <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
             </div>
@@ -140,9 +140,9 @@ export default function Home() {
                 layout="fill"
                 className="rounded object-cover object-center" /></div>
             <div className="flex flex-col pt-2 rounded text-center mb-16">
-              <h3 className="text-2xl text-[#3A3A3A]">Syltherine</h3>
-              <p className="text-[#898989]">Stylish cafe chair</p>
-              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 2.500.000</span> <span className="text-[#B0B0B0]"><s>Rp 3.500.000</s></span></h4>
+              <h3 className="text-2xl text-[#3A3A3A]">Potty</h3>
+              <p className="text-[#898989]">Minimalist flower pot</p>
+              <h4 className="flex gap-3"><span className="text-[#3A3A3A]">Rp 500.000</span> <span className="text-[#B0B0B0]"><s>Rp 950.000</s></span></h4>
             </div>
           </div>
 
