@@ -1,28 +1,65 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Heaader() {
-    return (
-        <div className="flex items-center justify-between py-5 mx-24    ">
-            <div className="1">
-                <Link href={"/"}><Image src={"/logo2.svg"} alt="" width={185} height={100} /></Link>
-            </div>
+  return (
+    <header className="flex flex-wrap items-center justify-between py-5 px-5 md:px-10 lg:px-24">
+      {/* Logo Section */}
+      <div className="flex-shrink-0">
+        <Link href={"/"}>
+          <Image
+            src={"/logo2.svg"}
+            alt="Logo"
+            width={185}
+            height={100}
+            className="w-28 md:w-44" // Adjust logo size for smaller screens
+          />
+        </Link>
+      </div>
 
-            <div className="2">
-                <ul className="flex gap-14 font-semibold">
-                    <Link href={"/"}><li className="border-b-2 border-transparent hover:border-slate-200">Home</li></Link>
-                    <Link href={"/shop"}><li className=" hover:border-b-2">Shop</li></Link>
-                    <Link href={"/blog"}><li className=" hover:border-b-2">Blog</li></Link>
-                    <Link href={"/contact"}><li className=" hover:border-b-2">Contact</li></Link>
-                </ul>
-            </div>
+      {/* Navigation Links */}
+      <nav className="hidden md:flex gap-8 font-semibold">
+        <Link href={"/"} className="border-b-2 border-transparent hover:border-slate-200">Home</Link>
+        <Link href={"/shop"} className="hover:border-b-2 hover:border-slate-200">Shop</Link>
+        <Link href={"/blog"} className="hover:border-b-2 hover:border-slate-200">Blog</Link>
+        <Link href={"/contact"} className="hover:border-b-2 hover:border-slate-200">Contact</Link>
+      </nav>
 
-            <div className="3 flex gap-8">
-            <button><Image src={"/mdi_account-alert-outline.svg"} alt="" width={25} height={10} /></button>
-            <button><Image src={"/akar-icons_search.svg"} alt="" width={25} height={10} /></button>
-            <button><Image src={"/akar-icons_heart.svg"} alt="" width={25} height={10} /></button>
-            <button><Image src={"/ant-design_shopping-cart-outlined.svg"} alt="" width={25} height={10} /></button>
-            </div>
-        </div>
-    )
+      {/* Icon Buttons */}
+      <div className="flex gap-4 mt-4 md:mt-0">
+        <button>
+          <Image
+            src={"/mdi_account-alert-outline.svg"}
+            alt="Account Alert"
+            width={25}
+            height={25}
+          />
+        </button>
+        <button>
+          <Image
+            src={"/akar-icons_search.svg"}
+            alt="Search"
+            width={25}
+            height={25}
+          />
+        </button>
+        <button>
+          <Image
+            src={"/akar-icons_heart.svg"}
+            alt="Wishlist"
+            width={25}
+            height={25}
+          />
+        </button>
+        <button>
+          <Image
+            src={"/ant-design_shopping-cart-outlined.svg"}
+            alt="Cart"
+            width={25}
+            height={25}
+          />
+        </button>
+      </div>
+    </header>
+  );
 }
