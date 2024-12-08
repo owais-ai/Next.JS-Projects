@@ -18,7 +18,7 @@ export default function Heaader() {
       </div>
 
       {/* Navigation Links */}
-      <nav className="hidden md:flex gap-8 font-semibold">
+      <nav className="hidden md:flex gap-10 font-semibold">
         <Link href={"/"} className="border-b-2 border-transparent hover:border-slate-200">Home</Link>
         <Link href={"/shop"} className="hover:border-b-2 hover:border-slate-200">Shop</Link>
         <Link href={"/blog"} className="hover:border-b-2 hover:border-slate-200">Blog</Link>
