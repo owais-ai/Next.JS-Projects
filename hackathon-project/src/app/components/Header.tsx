@@ -10,10 +10,10 @@ export default function Heaader() {
 
             <div className="2">
                 <ul className="flex gap-14 font-semibold">
-                    <Link href={"/"}><li>Home</li></Link>
-                    <Link href={"/shop"}><li>Shop</li></Link>
-                    <Link href={"/blog"}><li>Blog</li></Link>
-                    <Link href={"/contact"}><li>Contact</li></Link>
+                    <Link href={"/"}><li className="border-b-2 border-transparent hover:border-slate-200">Home</li></Link>
+                    <Link href={"/shop"}><li className=" hover:border-b-2">Shop</li></Link>
+                    <Link href={"/blog"}><li className=" hover:border-b-2">Blog</li></Link>
+                    <Link href={"/contact"}><li className=" hover:border-b-2">Contact</li></Link>
                 </ul>
             </div>
 
