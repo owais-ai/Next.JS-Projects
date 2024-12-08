@@ -18,10 +18,10 @@ export default function Heaader() {
             </div>
 
             <div className="3 flex gap-8">
-            <Image src={"/mdi_account-alert-outline.svg"} alt="" width={25} height={10} />
-            <Image src={"/akar-icons_search.svg"} alt="" width={25} height={10} />
-            <Image src={"/akar-icons_heart.svg"} alt="" width={25} height={10} />
-            <Image src={"/ant-design_shopping-cart-outlined.svg"} alt="" width={25} height={10} />
+            <button><Image src={"/mdi_account-alert-outline.svg"} alt="" width={25} height={10} /></button>
+            <button><Image src={"/akar-icons_search.svg"} alt="" width={25} height={10} /></button>
+            <button><Image src={"/akar-icons_heart.svg"} alt="" width={25} height={10} /></button>
+            <button><Image src={"/ant-design_shopping-cart-outlined.svg"} alt="" width={25} height={10} /></button>
             </div>
         </div>
     )
