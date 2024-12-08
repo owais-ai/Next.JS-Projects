@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import Service from "../components/Service"
 
 export default function Shop() {
     return (
@@ -249,15 +250,7 @@ export default function Shop() {
                 <button className="py-3 px-5 bg-[#F9F1E7] text-black rounded-md">Next</button>
             </div>
 
-            <div className="bg-[#F9F1E7] w-full h-60 mt-16 relative">
-                <Image src={'/Feature.svg'}
-                alt=""
-                layout="fill"
-                className="object-contain object-center px-16"
-                />
-                
-
-            </div>
+            <Service/>
 
         </div>
     )

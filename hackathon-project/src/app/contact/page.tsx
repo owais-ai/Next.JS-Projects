@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Service from "../components/Service"
 
 export default function Contact() {
     return (
@@ -50,13 +51,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="bg-[#F9F1E7] w-full h-60 mt-16 relative">
-                <Image src={'/Feature.svg'}
-                    alt=""
-                    layout="fill"
-                    className="object-contain object-center px-16"
-                />
-            </div>
+            <Service/>
 
         </div>
     )
