@@ -76,8 +76,14 @@ export default function Header() {
     <SheetHeader>
       <SheetTitle>Navigate to?</SheetTitle>
       <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
+        <div className="mt-10">
+          <ul className="flex flex-col gap-10 font-semibold">
+        <Link href={"/"} className="border-b-2 border-transparent hover:border-slate-200">Home</Link>
+        <Link href={"/shop"} className="hover:border-b-2 hover:border-slate-200">Shop</Link>
+        <Link href={"/blog"} className="hover:border-b-2 hover:border-slate-200">Blog</Link>
+        <Link href={"/contact"} className="hover:border-b-2 hover:border-slate-200">Contact</Link>
+          </ul>
+        </div>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
