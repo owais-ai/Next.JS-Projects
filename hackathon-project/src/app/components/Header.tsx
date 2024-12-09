@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Menu } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -70,10 +71,10 @@ export default function Header() {
         </button>
         <div className="md:hidden">
         <Sheet>
-  <SheetTrigger>Open</SheetTrigger>
+  <SheetTrigger><Menu/></SheetTrigger>
   <SheetContent>
     <SheetHeader>
-      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetTitle>Navigate to?</SheetTitle>
       <SheetDescription>
         This action cannot be undone. This will permanently delete your account
         and remove your data from our servers.
