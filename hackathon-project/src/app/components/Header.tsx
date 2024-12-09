@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
-export default function Heaader() {
+
+export default function Header() {
   return (
     <header className="flex flex-wrap items-center justify-between py-5 px-5 md:px-10 lg:px-24">
       {/* Logo Section */}
@@ -16,7 +25,7 @@ export default function Heaader() {
           />
         </Link>
       </div>
-
+        
       {/* Navigation Links */}
       <nav className="hidden md:flex gap-10 font-semibold">
         <Link href={"/"} className="border-b-2 border-transparent hover:border-slate-200">Home</Link>
@@ -59,6 +68,21 @@ export default function Heaader() {
             height={25}
           />
         </button>
+        <div className="md:hidden">
+        <Sheet>
+  <SheetTrigger>Open</SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+
+        </div>
       </div>
     </header>
   );
