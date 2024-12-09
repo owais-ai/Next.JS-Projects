@@ -100,7 +100,7 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-          <button className="text-[#B88E2F] border border-[#B88E2F] py-2 px-8 rounded font-semibold hover:bg-[#b88e2f] hover:text-white transition">
+          <button className="text-[#B88E2F] border border-[#B88E2F] py-2 px-8 mb-6 rounded font-semibold hover:bg-[#b88e2f] hover:text-white transition">
             Show More
           </button>
         </div>
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
 
         <div className="w-full">
-          <Image src={'/Images.svg'} alt="" width={130} height={30} className="w-full -mt-8 object-cover object-center rounded-md"></Image>
+          <Image src={'/Images.svg'} alt="" width={130} height={30} className="w-full -mt-8 mb-4 object-cover object-center rounded-md"></Image>
         </div>
 
       </div>
