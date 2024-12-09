@@ -129,7 +129,7 @@ const products = [
     name: "Muggo",
     description: "Small Mug",
     price: "Rp 4.500.000",
-    oldPrice: "Rp 7.500.000",
+    oldPrice: "Rp 6.500.000",
   },
 ];
 
