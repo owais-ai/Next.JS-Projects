@@ -13,7 +13,7 @@ import {
 
 export default function Header() {
   return (
-    <header className="flex flex-wrap items-center justify-between py-5 px-5 md:px-10 lg:px-24">
+    <header className="flex flex-wrap items-center  justify-center md:justify-between py-5 px-5 md:px-10 lg:px-24">
       {/* Logo Section */}
       <div className="flex-shrink-0">
         <Link href={"/"}>
@@ -26,7 +26,7 @@ export default function Header() {
           />
         </Link>
       </div>
-        
+
       {/* Navigation Links */}
       <nav className="hidden md:flex gap-10 font-semibold">
         <Link href={"/"} className="border-b-2 border-transparent hover:border-slate-200">Home</Link>
@@ -36,7 +36,7 @@ export default function Header() {
       </nav>
 
       {/* Icon Buttons */}
-      <div className="flex gap-4 mt-4 md:mt-0">
+      <div className="hidden md:flex gap-4 mt-4 md:mt-0">
         <button>
           <Image
             src={"/mdi_account-alert-outline.svg"}
@@ -69,28 +69,29 @@ export default function Header() {
             height={25}
           />
         </button>
-        <div className="md:hidden">
-        <Sheet>
-  <SheetTrigger><Menu/></SheetTrigger>
-  <SheetContent>
-    <SheetHeader>
-      <SheetTitle>Navigate to?</SheetTitle>
-      <SheetDescription>
-        <div className="mt-10">
-          <ul className="flex flex-col items-center gap-10 font-semibold">
-        <Link href={"/"} className="border-b-2 border-transparent w-12 hover:border-slate-200">Home</Link>
-        <Link href={"/shop"} className="hover:border-b-2 w-12 hover:border-slate-200">Shop</Link>
-        <Link href={"/blog"} className="hover:border-b-2 w-12 hover:border-slate-200">Blog</Link>
-        <Link href={"/contact"} className="hover:border-b-2 w-16 hover:border-slate-200">Contact</Link>
-          </ul>
-        </div>
-      </SheetDescription>
-    </SheetHeader>
-  </SheetContent>
-</Sheet>
+        
+      </div>
+      <div className="md:hidden relative left-20 top-1">
+          <Sheet>
+            <SheetTrigger><Menu /></SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>Navigate to?</SheetTitle>
+                <SheetDescription>
+                  <div className="mt-10">
+                    <ul className="flex flex-col items-center gap-10 font-semibold">
+                      <Link href={"/"} className="border-b-2 border-transparent w-12 hover:border-slate-200">Home</Link>
+                      <Link href={"/shop"} className="hover:border-b-2 w-12 hover:border-slate-200">Shop</Link>
+                      <Link href={"/blog"} className="hover:border-b-2 w-12 hover:border-slate-200">Blog</Link>
+                      <Link href={"/contact"} className="hover:border-b-2 w-16 hover:border-slate-200">Contact</Link>
+                    </ul>
+                  </div>
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
 
         </div>
-      </div>
     </header>
   );
 }
