@@ -157,7 +157,7 @@ export default function Shop() {
       {/* Products Section */}
       <div className="Products flex justify-around mt-10 mx-24 flex-wrap">
         {products.map((product) => (
-          <div key={product.id} className="product w-60 h-96">
+          <div key={product.id} className="product hover:scale-105 w-60 h-96">
             <div className="relative w-60 h-64">
               <Image src={product.image} alt={product.name} layout="fill" className="object-cover object-center rounded-t" />
             </div>

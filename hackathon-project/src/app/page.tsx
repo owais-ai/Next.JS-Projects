@@ -80,7 +80,7 @@ export default function Home() {
             { src: "/e77ede2f478b2f26210bd264978981f6.jpeg", title: "Pingky", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Cute bed set" },
            
           ].map((product, index) => (
-            <div key={index} className="w-full sm:w-[45%] lg:w-[22%] text-center">
+            <div key={index} className="w-full sm:w-[45%] hover:scale-105 lg:w-[22%] text-center">
               <div className="relative w-full h-[350px]">
                 <Image
                   src={product.src}
