@@ -50,12 +50,34 @@ export default function Home() {
         <h2 className="text-center text-2xl md:text-3xl font-bold text-[#3A3A3A]">Our Products</h2>
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {[
-            { src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair" },
-            { src: "/4a5dbc0c29efbae1beca6ab40dd9b598.jpeg", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool" },
-            { src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair" },
-            { src: "/4a5dbc0c29efbae1beca6ab40dd9b598.jpeg", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool" }, { src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair" },
-            { src: "/4a5dbc0c29efbae1beca6ab40dd9b598.jpeg", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool" }, { src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair" },
-            { src: "/4a5dbc0c29efbae1beca6ab40dd9b598.jpeg", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool" },
+            {
+              src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair"
+
+            },
+            {
+              src: "/4a5dbc0c29efbae1beca6ab40dd9b598.jpeg", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool"
+
+            },
+            {
+              src: "/7c62fb49f7d4a1a6a5dc5959b40150ed.png", title: "Lolito", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Luxury big sofa"
+
+            },
+            {
+              src: "/a7c05024ab4e27374edb12195b6559e2.png", title: "Muggo", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Small Mug"
+
+            },
+            {
+              src: "/43eebd52ea72d60650f31030ec4bf7e6.png", title: "Syltherine", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Stylish cafe chair"
+            },
+            {
+              src: "/ea43a4c55f9e28aa3592f17ff47a4303.png", title: "Respira", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Outdoor bar table and stool"
+
+            },
+            {
+              src: "/3d98b27fb98ee49958d7089f10d39dfe.jpeg", title: "Pot", price: "Rp 2.500.000", discount: "Rp 3.500.000", description: "Minimalist flower pot"
+
+            },
+            { src: "/e77ede2f478b2f26210bd264978981f6.jpeg", title: "Pingky", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Cute bed set" },
             // Add more products as needed
           ].map((product, index) => (
             <div key={index} className="w-full sm:w-[45%] lg:w-[22%] text-center">
@@ -67,12 +89,13 @@ export default function Home() {
                   className="rounded object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-[#3A3A3A] mt-4">{product.title}</h3>
+              <div className="bg-[#F4F5F7]">
+              <h3 className="text-xl font-semibold text-[#3A3A3A]">{product.title}</h3>
               <p className="text-[#898989]">{product.description}</p>
               <p className="text-lg font-semibold">
                 <span className="text-[#3A3A3A]">{product.price}</span>{" "}
                 <span className="line-through text-[#B0B0B0]">{product.discount}</span>
-              </p>
+              </p></div>
             </div>
           ))}
         </div>
@@ -105,7 +128,7 @@ export default function Home() {
             <Image src="/Indicator.svg" alt="Indicator" layout="fill" />
           </div>
         </div>
-        
+
       </section>
       <div className="setup">
 
