@@ -71,7 +71,7 @@ export default function Header() {
         </button>
         
       </div>
-      <div className="md:hidden relative left-20 top-1">
+      <div className="md:hidden relative left-24 top-1">
           <Sheet>
             <SheetTrigger><Menu /></SheetTrigger>
             <SheetContent>
