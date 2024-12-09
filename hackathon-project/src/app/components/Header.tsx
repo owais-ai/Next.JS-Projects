@@ -80,10 +80,10 @@ export default function Header() {
                 <SheetDescription>
                   <div className="mt-10">
                     <ul className="flex flex-col items-center gap-10 font-semibold">
-                      <Link href={"/"} className="border-b-2 border-transparent w-12 hover:border-slate-200">Home</Link>
-                      <Link href={"/shop"} className="hover:border-b-2 w-12 hover:border-slate-200">Shop</Link>
-                      <Link href={"/blog"} className="hover:border-b-2 w-12 hover:border-slate-200">Blog</Link>
-                      <Link href={"/contact"} className="hover:border-b-2 w-16 hover:border-slate-200">Contact</Link>
+                      <Link href={"/"} className="border-b-2 border-transparent text-xl w-12 hover:border-slate-200">Home</Link>
+                      <Link href={"/shop"} className="hover:border-b-2 w-12 text-xl hover:border-slate-200">Shop</Link>
+                      <Link href={"/blog"} className="hover:border-b-2 w-12 text-xl hover:border-slate-200">Blog</Link>
+                      <Link href={"/contact"} className="hover:border-b-2 w-16 text-xl hover:border-slate-200">Contact</Link>
                     </ul>
                   </div>
                 </SheetDescription>
