@@ -159,9 +159,9 @@ export default function Shop() {
         {products.map((product) => (
           <div key={product.id} className="product w-60 h-96">
             <div className="relative w-60 h-64">
-              <Image src={product.image} alt={product.name} layout="fill" className="object-cover object-center rounded" />
+              <Image src={product.image} alt={product.name} layout="fill" className="object-cover object-center rounded-t" />
             </div>
-            <div className="flex flex-col pt-2 rounded text-center mb-16 items-center bg-[#F4F5F7]">
+            <div className="flex flex-col pt-2 rounded-b text-center mb-16 items-center bg-[#F4F5F7]">
               <h3 className="text-2xl text-[#3A3A3A]">{product.name}</h3>
               <p className="text-[#898989]">{product.description}</p>
               <h4 className="flex gap-3">

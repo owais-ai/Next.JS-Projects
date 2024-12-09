@@ -78,7 +78,7 @@ export default function Home() {
 
             },
             { src: "/e77ede2f478b2f26210bd264978981f6.jpeg", title: "Pingky", price: "Rp 2.500.000", discount: "Rp 500.000", description: "Cute bed set" },
-            // Add more products as needed
+           
           ].map((product, index) => (
             <div key={index} className="w-full sm:w-[45%] lg:w-[22%] text-center">
               <div className="relative w-full h-[350px]">
@@ -86,10 +86,10 @@ export default function Home() {
                   src={product.src}
                   alt={product.title}
                   layout="fill"
-                  className="rounded object-cover"
+                  className="rounded-t object-cover"
                 />
               </div>
-              <div className="bg-[#F4F5F7]">
+              <div className="bg-[#F4F5F7] rounded-b">
               <h3 className="text-xl font-semibold text-[#3A3A3A]">{product.title}</h3>
               <p className="text-[#898989]">{product.description}</p>
               <p className="text-lg font-semibold">
