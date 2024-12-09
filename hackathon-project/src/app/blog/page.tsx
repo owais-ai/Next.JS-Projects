@@ -137,13 +137,19 @@ export default function Blog() {
 
                         },
                         {
-                            img: '/8b94b8e3a17bbb18c564006d557e73b1.jpeg',
-                            title: 'Going all-in with millennial design',
+                            img: '/6615f4968338e0a7004a86529ecf85c9.jpeg',
+                            title: 'Handmade pieces that took time to make',
                             date: '03 Aug 2022',
                         },
                         {
-                            img: '/309ac985861a262b8622e7528e08049f.jpeg',
-                            title: 'Exploring new ways of decorating',
+                            img: '/cfbc72a9932875eeb20db551bb01abb3.jpeg',
+                            title: 'Modern home in Milan',
+                            date: '03 Aug 2022',
+
+                        },
+                        {
+                            img: '/7de5c930d1538360f43cbfa1d7f00337.jpeg',
+                            title: 'Colorful office redesign',
                             date: '03 Aug 2022',
 
                         }].map((post, idx) => (
