@@ -4,15 +4,21 @@ import Navbar from "../components/Navbar";
 
 export default function Swift() {
   return (
-    <div className="bg-gray-100"><Navbar/>
-      <div className="flex justify-center items-center font-bold underline text-2xl py-5">
+    <div className="bg-gray-100">
+      <Navbar />
+
+      {/* Title */}
+      <div className="flex justify-center items-center font-bold underline text-2xl py-5 px-4">
         Suzuki Swift 2024 Price in Pakistan, Images, Reviews & Specs
       </div>
-      <div className="flex justify-center items-center pb-5">
-        <Image src="/Swift.jpg" alt="Swift" width={350} height={400} />
+
+      {/* Car Image */}
+      <div className="flex justify-center items-center pb-5 px-4">
+        <Image src="/Swift.jpg" alt="Swift" width={350} height={400} className="rounded"/>
       </div>
 
-      <div className="flex gap-8 justify-center">
+      {/* Action Buttons */}
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-center px-4">
         <button className="bg-blue-800 text-white h-9 w-40 rounded">
           Book a test Drive
         </button>
@@ -27,11 +33,13 @@ export default function Swift() {
         </button>
       </div>
 
+      {/* Vehicle Description */}
       <div className="flex justify-center my-6 font-bold text-xl">
         Vehicle Description
       </div>
 
-      <div className="flex justify-center gap-4 mb-4">
+      {/* Vehicle Specifications - Group 1 */}
+      <div className="flex flex-col md:flex-row justify-center gap-4 mb-4 px-4">
         <div className="flex gap-1">
           <p className="font-bold">Number of Doors</p>
           <p>4</p>
@@ -54,7 +62,8 @@ export default function Swift() {
         </div>
       </div>
 
-      <div className="flex justify-center gap-4">
+      {/* Vehicle Specifications - Group 2 */}
+      <div className="flex flex-col md:flex-row justify-center gap-4 px-4">
         <div className="flex gap-1">
           <p className="font-bold">Avg</p>
           <p>13 KM per ltr</p>
@@ -68,9 +77,13 @@ export default function Swift() {
           <p>High Octane</p>
         </div>
       </div>
+
+      {/* Price Section */}
       <div className="flex justify-center my-5 text-green-600 text-2xl">
         PKR 45,50,000
       </div>
+
+      {/* Payment Button */}
       <div className="flex justify-center">
         <Link href="/checkout">
           <button className="bg-blue-800 text-white w-40 h-12 rounded my-4">
