@@ -8,7 +8,7 @@ interface Book {
     price: number;  // Price is a number based on your API response
     available: boolean;
 }
-const Book = async ({ params } : { params: { id:string }}) => {
+const Book = async ({ params } : { params: { id:number }}) => {
     console.log(params);
     
     const response = await fetch(`https://simple-books-api.glitch.me/books/${params.id}`)
